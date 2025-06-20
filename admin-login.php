@@ -15,7 +15,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     
     // Validasi payload
     if (strpos($raw_password, "YWRtaW4nIG9yIDE9MS0tCg==") !== false && $username === 'admin') {
-        echo "<div class='access-granted'>DAH BISA HEK NASA BANK<br>FLAG: CYC{priadingjntimdakpernahmenyesal}</div>";
+        echo "<div class='access-granted'>DAH BISA HEK NASA BANK<br>FLAG: CYC{goodjobbanksempuh}</div>";
         exit;
     }
     
