@@ -69,7 +69,6 @@
     </div>
 
     <script>
-        // Matrix effect code (tetap sama)
         const canvas = document.getElementById('matrix');
         const ctx = canvas.getContext('2d');
         canvas.width = window.innerWidth;
