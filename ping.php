@@ -10,12 +10,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $ip = hex2bin($_POST['ip'] ?? '');
     
     if (preg_match('/;.*cat.*flag.txt/', $ip)) {
-        $popupMessage = "CYC{ph3lixxxjanganlupamewing}";
+        $popupMessage = "CYC{bowlehjugwabankmntapmntap}";
         $showPopup = true;
         $isSuccess = true;
     } else {
         $output = shell_exec("ping -c 4 " . escapeshellarg($ip));
-        $popupMessage = "Error kayak codingan kamwh wkwkk " . htmlspecialchars($ip) . "\n\n" . htmlspecialchars($output);
+        $popupMessage = "Error kayak codingan kamwh bank/mbwak wkwkk! " . htmlspecialchars($ip) . "\n\n" . htmlspecialchars($output);
         $showPopup = true;
         $isSuccess = false;
     }
