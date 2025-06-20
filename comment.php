@@ -69,6 +69,7 @@
     </div>
 
     <script>
+        // Matrix effect code (tetap sama)
         const canvas = document.getElementById('matrix');
         const ctx = canvas.getContext('2d');
         canvas.width = window.innerWidth;
@@ -97,7 +98,6 @@
         }
         setInterval(drawMatrix, 33);
 
-        // Vulnerable comment system
         function postComment() {
             const comment = document.getElementById('commentInput').value;
             const decodedComment = decodeURIComponent(comment);
@@ -109,19 +109,8 @@
             document.getElementById('comments').appendChild(commentDiv);
             document.getElementById('commentInput').value = '';
         }
-
-        const encodedFlag = [67, 89, 67, 123, 110, 101, 103, 109, 114, 105, 115, 101, 112, 117, 104, 125];
-        window.__getFlag = () => String.fromCharCode(...encodedFlag);
-        
-        const hint = document.createElement('div');
-        hint.style.position = 'absolute';
-        hint.style.top = '0';
-        hint.style.left = '0';
-        hint.style.width = '15px';
-        hint.style.height = '15px';
-        hint.title = 'console.log(__getFlag())';
-        document.body.appendChild(hint);
     </script>
+    
+    <script src="flag.js"></script>
 </body>
 </html>
-
